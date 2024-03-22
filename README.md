@@ -79,6 +79,5 @@ curl -X POST http://0.0.0.0:3333/quit_driver -H "Content-Type: application/json"
 curl -X POST http://0.0.0.0:3333/get -H "Content-Type: application/json" -d '{"url": "https://example.com", "driver_uuid": "example_driver"}'
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+**Example Python Client Provided**
+In this repo, there is an example python client for you to use.
