@@ -49,7 +49,7 @@ Ensure you have the following installed on your system:
     python app.py
     ```
 
-Your server should now be running on `http://0.0.0.0:3333`.
+Your server should now be running on `http://0.0.0.0:4444`.
 
 ## Usage
 
@@ -64,19 +64,19 @@ The server provides three main endpoints:
 **Creating a Driver Instance:**
 
 ```bash
-curl -X POST http://0.0.0.0:3333/create_driver -H "Content-Type: application/json" -d '{"driver_uuid": "example_driver"}'
+curl -X POST http://0.0.0.0:4444/create_driver -H "Content-Type: application/json" -d '{"driver_uuid": "example_driver"}'
 ```
 
 **Quitting a Driver Instance:**
 
 ```bash
-curl -X POST http://0.0.0.0:3333/quit_driver -H "Content-Type: application/json" -d '{"driver_uuid": "example_driver"}'
+curl -X POST http://0.0.0.0:4444/quit_driver -H "Content-Type: application/json" -d '{"driver_uuid": "example_driver"}'
 ```
 
 **Fetching a Page Source:**
 
 ```bash
-curl -X POST http://0.0.0.0:3333/get -H "Content-Type: application/json" -d '{"url": "https://example.com", "driver_uuid": "example_driver"}'
+curl -X POST http://0.0.0.0:4444/get -H "Content-Type: application/json" -d '{"url": "https://example.com", "driver_uuid": "example_driver"}'
 ```
 
 ### Example Python Client Provided
