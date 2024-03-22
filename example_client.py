@@ -2,7 +2,7 @@ import requests
 import uuid
 
 # Base URL of the web_driver_server
-BASE_URL = "http://0.0.0.0:3333"
+BASE_URL = "http://0.0.0.0:4444"
 
 # Generate a unique driver UUID using the uuid library
 driver_uuid = str(uuid.uuid4())
